@@ -8,7 +8,7 @@ export default function Navbar() {
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-black/5 backdrop-blur-sm">
         <div className=" flex items-center justify-between h-14 px-4 gap-6 p-4">
-        <a href="#hero" className="font-bold text-lg">
+        <a href="#hero" className="font-bold text-lg" onClick={() => setOpen(false)}>
           Huy
         </a>
         <div className="hidden md:flex gap-6 p-4">
