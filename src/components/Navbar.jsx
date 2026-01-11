@@ -46,12 +46,12 @@ export default function Navbar() {
 
         {open && (
           <div className="md:hidden bg-gray-900 text-gray-200 backdrop-blur-sm absolute flex flex-col top-14 left-0 w-full gap-6 p-4">
-            <a href="#about">About</a>
-            <a href="#skill">Skill</a>
-            <a href="#project">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-            <a href="#resume">Resume</a>
+            <a href="#about" onClick={() => setOpen(false)}>About</a>
+            <a href="#skill" onClick={() => setOpen(false)}>Skill</a>
+            <a href="#project" onClick={() => setOpen(false)}>Projects</a>
+            <a href="#experience" onClick={() => setOpen(false)}>Experience</a>
+            <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+            <a href="#resume" onClick={() => setOpen(false)}>Resume</a>
           </div>
         )}
       </nav>
