@@ -3,8 +3,8 @@ import SocialButton from "./SocialButton";
 export default function Hero() {
   return (
     <>
-      <section className="bg-teal-100 h-dvh flex flex-col justify-center items-center gap-4 -translate-y-6">
-        <h1 className="text-6xl text-center">Hello, I'm <span className="text-teal-400">Huy Huynh</span></h1>
+      <section className="bg-teal-100 h-dvh flex flex-col justify-center items-center gap-4">
+        <h1 className="text-5xl text-center">Hello, I'm <span className="text-teal-400">Huy Huynh</span></h1>
         <p>A Software Developer from New Jersey</p>
         <div className="flex gap-6 mt-4">
           <SocialButton>
