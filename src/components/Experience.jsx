@@ -28,7 +28,7 @@ const experiences = [
 export default function Experience() {
   return (
     <div
-      id="skill"
+      id="experience"
       className="bg-teal-100 py-20 border-t border-solid border-teal-600"
     >
       <h1 className="text-center font-bold text-4xl pb-16">Experience</h1>
