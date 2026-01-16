@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="bg-black border-t border-cyan-500/20 py-20">
       <h1 className="text-center font-bold text-4xl pb-16 text-slate-100">Contact Me</h1>
       <div className="max-w-4xl mx-auto text-center">
-        <p className="mb-8 text-slate-300">
+        <p className="mb-8 text-base text-slate-300">
           I'm always open to new opportunities and collaborations. Feel free to
           reach out if you'd like to work together or just have a chat!
         </p>
