@@ -9,8 +9,8 @@ const experiences = [
     descriptions: [
       "Tutored over 20 students across programming and mathematics courses, providing support to strengthen problem‑solving skills.",
       "Helped students develop problem‑solving strategies and personalized study plans, improving course grades by an average of 20%.",
-      "Reviewed student code and provided feedback on readability, structure, and best programming practices."
-    ]
+      "Reviewed student code and provided feedback on readability, structure, and best programming practices.",
+    ],
   },
   {
     title: "Undergraduate Research Assistant",
@@ -20,9 +20,9 @@ const experiences = [
     descriptions: [
       "Developed Python automation tools to process over 300k+ medical concepts, reducing manual data extraction time by 80%.",
       "Optimized graph data structures to build medical terminology networks and perform traversal for identifying relationships between clinical concepts.",
-      "Built backend components leveraging medical terminologies to improve accuracy across healthcare data systems."
-    ]
-  }
+      "Built backend components leveraging medical terminologies to improve accuracy across healthcare data systems.",
+    ],
+  },
 ];
 
 export default function Experience() {
@@ -38,9 +38,9 @@ export default function Experience() {
             key={index}
             title={exp.title}
             descriptions={exp.descriptions}
-              location={exp.location}
-  organization={exp.organization}
-  dateRange={exp.dateRange}
+            location={exp.location}
+            organization={exp.organization}
+            dateRange={exp.dateRange}
           />
         ))}
       </div>
