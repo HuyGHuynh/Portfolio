@@ -3,7 +3,7 @@ import SocialButton from "./SocialButton";
 export default function Hero() {
   return (
     <section id="hero" className="bg-gradient-to-b from-black to-zinc-900 h-dvh flex flex-col justify-center items-center gap-4 px-4">
-      <h1 className="text-4xl md:text-5xl text-center font-bold text-slate-100">Hello, I'm <span className="bg-gradient-to-r from-cyan-400 to-slate-400 bg-clip-text text-transparent">Huy Huynh</span></h1>
+      <h1 className="text-4xl md:text-6xl lg:text-7xl text-center font-bold text-slate-100">Hello, I'm <span className="bg-gradient-to-r from-cyan-400 to-slate-400 bg-clip-text text-transparent">Huy Huynh</span></h1>
       <p className="text-lg md:text-xl text-center text-slate-300">A Software Developer from New Jersey</p>
       <div className="flex gap-6 mt-4">
         <a href="https://github.com/HuyGHuynh" target="_blank" rel="noopener noreferrer">

@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-cyan-500/20">
-      <div className="flex items-center justify-between h-16 px-6 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between h-16 px-6">
         <a href="#hero" className="font-bold text-xl bg-gradient-to-r from-cyan-400 to-slate-400 bg-clip-text text-transparent hover:from-cyan-300 hover:to-slate-300 hover:scale-110 transition-all" onClick={() => setOpen(false)}>
           Huy
         </a>
