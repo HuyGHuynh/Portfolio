@@ -2,28 +2,26 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  console.log("Menu open: ", open);
 
   return (
-    <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-black/5 backdrop-blur-sm">
-        <div className=" flex items-center justify-between h-14 px-4 gap-6 p-4">
-        <a href="#hero" className="font-bold text-lg" onClick={() => setOpen(false)}>
+    <nav className="fixed top-0 left-0 w-full z-50 bg-teal-100/80 backdrop-blur-md border-b border-teal-600/20">
+      <div className="flex items-center justify-between h-16 px-6 max-w-7xl mx-auto">
+        <a href="#hero" className="font-bold text-xl hover:text-teal-600 transition-colors" onClick={() => setOpen(false)}>
           Huy
         </a>
-        <div className="hidden md:flex gap-6 p-4">
-          <a href="#about">About</a>
-          <a href="#skill">Skill</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-          <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/preview" target="_blank" rel="noopener noreferrer">Resume</a>
+        <div className="hidden md:flex gap-8">
+          <a href="#about" className="hover:text-teal-600 transition-colors">About</a>
+          <a href="#skill" className="hover:text-teal-600 transition-colors">Skill</a>
+          <a href="#projects" className="hover:text-teal-600 transition-colors">Projects</a>
+          <a href="#experience" className="hover:text-teal-600 transition-colors">Experience</a>
+          <a href="#contact" className="hover:text-teal-600 transition-colors">Contact</a>
+          <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/view" target="_blank" rel="noopener noreferrer" className="hover:text-teal-600 transition-colors">Resume</a>
         </div>
 
-        {/*This is for mobile development */}
         <button
-          className="md:hidden cursor-pointer"
+          className="md:hidden cursor-pointer p-2 hover:bg-teal-200 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500"
           onClick={() => setOpen(!open)}
+          aria-label="Toggle menu"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,29 +30,30 @@ export default function Navbar() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-menu-icon lucide-menu"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-menu-icon lucide-menu"
           >
             <path d="M4 5h16" />
             <path d="M4 12h16" />
             <path d="M4 19h16" />
           </svg>
         </button>
-        </div>
+      </div>
 
-        {open && (
-          <div className="md:hidden bg-gray-900 text-gray-200 backdrop-blur-sm absolute flex flex-col top-14 left-0 w-full gap-6 p-4">
-            <a href="#about" onClick={() => setOpen(false)}>About</a>
-            <a href="#skill" onClick={() => setOpen(false)}>Skill</a>
-            <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
-            <a href="#experience" onClick={() => setOpen(false)}>Experience</a>
-            <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
-            <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/preview" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Resume</a>
+      {open && (
+        <div className="md:hidden bg-teal-100 border-t border-teal-600/20 backdrop-blur-md">
+          <div className="flex flex-col gap-4 p-6">
+            <a href="#about" onClick={() => setOpen(false)} className="hover:text-teal-600 transition-colors">About</a>
+            <a href="#skill" onClick={() => setOpen(false)} className="hover:text-teal-600 transition-colors">Skill</a>
+            <a href="#projects" onClick={() => setOpen(false)} className="hover:text-teal-600 transition-colors">Projects</a>
+            <a href="#experience" onClick={() => setOpen(false)} className="hover:text-teal-600 transition-colors">Experience</a>
+            <a href="#contact" onClick={() => setOpen(false)} className="hover:text-teal-600 transition-colors">Contact</a>
+            <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/view" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="hover:text-teal-600 transition-colors">Resume</a>
           </div>
-        )}
-      </nav>
-    </>
+        </div>
+      )}
+    </nav>
   );
 }

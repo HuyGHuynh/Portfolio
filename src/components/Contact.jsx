@@ -2,21 +2,21 @@ import SocialButton from "./SocialButton";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-teal-100 py-20 border-t border-solid border-teal-600">
+    <section id="contact" className="bg-teal-100 py-20 border-t border-solid border-teal-600 px-4">
       <h1 className="text-center font-bold text-4xl pb-16">Contact Me</h1>
-      <div className="max-w-[60%] mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <p className="mb-8">
           I'm always open to new opportunities and collaborations. Feel free to
           reach out if you'd like to work together or just have a chat!
         </p>
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:yuhhuynh@gmail.com"
           className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-teal-700 transition-colors"
         >
           Send Me an Email
         </a>
         <div className="flex justify-center gap-6 mt-10">
-        <a href="mailto:your.email@example.com">
+        <a href="mailto:yuhhuynh@gmail.com">
           <SocialButton>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function Contact() {
             </svg>
           </SocialButton>
         </a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/HuyGHuynh" target="_blank" rel="noopener noreferrer">
           <SocialButton>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ export default function Contact() {
             </svg>
           </SocialButton>
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/huy-huynh11/" target="_blank" rel="noopener noreferrer">
           <SocialButton>
             <svg
               xmlns="http://www.w3.org/2000/svg"

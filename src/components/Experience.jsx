@@ -29,7 +29,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="bg-teal-100 py-20 border-t border-solid border-teal-600"
+      className="bg-teal-100 py-20 border-t border-solid border-teal-600 px-4"
     >
       <h1 className="text-center font-bold text-4xl pb-16">Experience</h1>
       <div className="flex flex-col items-center gap-6">
