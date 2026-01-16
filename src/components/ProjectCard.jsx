@@ -4,10 +4,16 @@ export default function ProjectCard({
   technologies,
   githubLink,
   liveLink,
+  award,
 }) {
   return (
-    <div className="border border-cyan-500/30 bg-zinc-900 rounded-lg w-[90%] md:w-[45%] lg:w-[30%] p-6 flex flex-col gap-4 hover:border-cyan-400/50 hover:bg-zinc-850 transition-all">
+    <div className="border border-cyan-500/30 bg-zinc-900 rounded-lg w-[90%] md:w-[48%] lg:w-[45%] p-6 flex flex-col gap-4 hover:border-cyan-400/50 hover:bg-zinc-850 transition-all">
       <h3 className="text-2xl font-semibold bg-gradient-to-r from-cyan-400 to-slate-400 bg-clip-text text-transparent">{title}</h3>
+      {award && (
+        <div className="bg-gradient-to-r from-cyan-500 to-cyan-600 text-black px-3 py-1 rounded-full text-xs font-bold shadow-lg border-2 border-cyan-400 w-fit">
+          🏆 {award}
+        </div>
+      )}
       <p className="text-sm text-slate-300">{description}</p>
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech, index) => (

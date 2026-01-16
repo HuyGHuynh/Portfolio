@@ -6,16 +6,16 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-cyan-500/20">
       <div className="flex items-center justify-between h-16 px-6 max-w-7xl mx-auto">
-        <a href="#hero" className="font-bold text-xl bg-gradient-to-r from-cyan-400 to-slate-400 bg-clip-text text-transparent hover:from-cyan-300 hover:to-slate-300 transition-all" onClick={() => setOpen(false)}>
+        <a href="#hero" className="font-bold text-xl bg-gradient-to-r from-cyan-400 to-slate-400 bg-clip-text text-transparent hover:from-cyan-300 hover:to-slate-300 hover:scale-110 transition-all" onClick={() => setOpen(false)}>
           Huy
         </a>
         <div className="hidden md:flex gap-8">
-          <a href="#about" className="text-slate-300 hover:text-cyan-400 transition-colors">About</a>
-          <a href="#skill" className="text-slate-300 hover:text-cyan-400 transition-colors">Skill</a>
-          <a href="#projects" className="text-slate-300 hover:text-cyan-400 transition-colors">Projects</a>
-          <a href="#experience" className="text-slate-300 hover:text-cyan-400 transition-colors">Experience</a>
-          <a href="#contact" className="text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
-          <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/view" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-cyan-400 transition-colors">Resume</a>
+          <a href="#about" className="text-slate-300 hover:text-cyan-400 hover:scale-110 transition-all">About</a>
+          <a href="#skill" className="text-slate-300 hover:text-cyan-400 hover:scale-110 transition-all">Skill</a>
+          <a href="#projects" className="text-slate-300 hover:text-cyan-400 hover:scale-110 transition-all">Projects</a>
+          <a href="#experience" className="text-slate-300 hover:text-cyan-400 hover:scale-110 transition-all">Experience</a>
+          <a href="#contact" className="text-slate-300 hover:text-cyan-400 hover:scale-110 transition-all">Contact</a>
+          <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/view" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-cyan-400 hover:scale-110 transition-all">Resume</a>
         </div>
 
         <button
@@ -45,12 +45,12 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden bg-black border-t border-cyan-500/20 backdrop-blur-md">
           <div className="flex flex-col gap-4 p-6">
-            <a href="#about" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 transition-colors">About</a>
-            <a href="#skill" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 transition-colors">Skill</a>
-            <a href="#projects" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 transition-colors">Projects</a>
-            <a href="#experience" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 transition-colors">Experience</a>
-            <a href="#contact" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
-            <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/view" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 transition-colors">Resume</a>
+            <a href="#about" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 hover:scale-105 transition-all">About</a>
+            <a href="#skill" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 hover:scale-105 transition-all">Skill</a>
+            <a href="#projects" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 hover:scale-105 transition-all">Projects</a>
+            <a href="#experience" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 hover:scale-105 transition-all">Experience</a>
+            <a href="#contact" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 hover:scale-105 transition-all">Contact</a>
+            <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/view" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="text-slate-300 hover:text-cyan-400 hover:scale-105 transition-all">Resume</a>
           </div>
         </div>
       )}
