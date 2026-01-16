@@ -32,8 +32,8 @@ const skills = [
 
 export default function Skill() {
   return (
-    <div id="skill" className="bg-teal-100 py-20 border-t border-solid border-teal-600">
-      <h1 className="text-center font-bold text-4xl pb-16">Skills</h1>
+    <div id="skill" className="bg-zinc-950 py-20 border-t border-cyan-500/20">
+      <h1 className="text-center font-bold text-4xl pb-16 text-slate-100">Skills</h1>
       <section className="flex flex-wrap w-[80%] md:w-[70%] mx-auto gap-6 justify-center">
         {skills.map((skill, index) => (
           <Card key={index} icon={skill.icon} label={skill.label} />

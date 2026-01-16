@@ -31,9 +31,9 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="bg-teal-100 py-20 border-t border-solid border-teal-600"
+      className="bg-zinc-900 py-20 border-t border-cyan-500/20"
     >
-      <h1 className="text-center font-bold text-4xl pb-16">Projects</h1>
+      <h1 className="text-center font-bold text-4xl pb-16 text-slate-100">Projects</h1>
       <div className="flex flex-wrap justify-center gap-6 max-w-[90%] mx-auto">
         {projects.map((project, index) => (
           <ProjectCard

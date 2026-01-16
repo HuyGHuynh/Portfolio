@@ -2,18 +2,18 @@ import SocialButton from "./SocialButton";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-teal-100 py-20 border-t border-solid border-teal-600 px-4">
-      <h1 className="text-center font-bold text-4xl pb-16">Contact Me</h1>
+    <section id="contact" className="bg-black border-t border-cyan-500/20 py-20">
+      <h1 className="text-center font-bold text-4xl pb-16 text-slate-100">Contact Me</h1>
       <div className="max-w-4xl mx-auto text-center">
-        <p className="mb-8">
+        <p className="mb-8 text-slate-300">
           I'm always open to new opportunities and collaborations. Feel free to
           reach out if you'd like to work together or just have a chat!
         </p>
         <a
           href="mailto:yuhhuynh@gmail.com"
-          className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-teal-700 transition-colors"
+          className="inline-block bg-cyan-500 text-black font-semibold py-3 px-8 rounded-lg hover:bg-cyan-400 transition-colors"
         >
-          Send Me an Email
+          Send an Email
         </a>
         <div className="flex justify-center gap-6 mt-10">
         <a href="mailto:yuhhuynh@gmail.com">
