@@ -17,7 +17,7 @@ export default function Navbar() {
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
-          <a href="#resume">Resume</a>
+          <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/preview" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
 
         {/*This is for mobile development */}
@@ -51,7 +51,7 @@ export default function Navbar() {
             <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
             <a href="#experience" onClick={() => setOpen(false)}>Experience</a>
             <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
-            <a href="#resume" onClick={() => setOpen(false)}>Resume</a>
+            <a href="https://drive.google.com/file/d/1sIuwIIjKUdCED1uMMnHe42E-WHJbAgWr/preview" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Resume</a>
           </div>
         )}
       </nav>
